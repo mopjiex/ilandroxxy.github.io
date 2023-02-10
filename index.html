@@ -2,194 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Обо мне</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="./style/normalize.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Моя страница</title>
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <a href="#" class="en">
-                <span>EN</span>
-            </a>
-            <span>|</span>
-            <a href="#"  class="ru">
-                <span>RU</span>
-            </a>
-        </div>
-        <div class="content">
-            <div class="content__hello">
-                <img class="content__hello-img" src="./images/avatar.png" alt="Avatar">
-                <div class="content__hello-text">
-                    <span class="content__name">
-                        <a href="#">Привет, я Илья Андрианов.</a>
-                    </span>
-                    <span class="content__description"> Здесь вы найдете кто я и чем занимаюсь!</span>
-                    <nav class="content__social">
-                        <a href="http://t.me/ilandroxy" target="_blank" class="content__social-item">
-                            <img src="./images/icons/telegram.svg" alt="Telegram">
-                            <span>Telegram</span>
-                        </a>
-                        <a href="http://wa.me/message/JSXJ2NLWTVNFC1" target="_blank" class="content__social-item">
-                            <img src="./images/icons/whatsapp.svg" alt="WhatsApp">
-                            <span>WhatsApp</span>
-                        </a>
-                       
-                        <a href="https://github.com/ilandroxxy" target="_blank" class="content__social-item">
-                            <img src="./images/icons/github.svg" alt="GitHub">
-                            <span>GitHub</span>
-                        </a>
 
-                        <a href="https://vk.com/ilandroxxy" target="_blank" class="content__social-item">
-                            <img src="./images/icons/vk.svg" alt="VK">
-                            <span>VK</span>
-                        </a>
+    <header class="header">
+        <div class="container">
+            <div class="header__languages">
+                <button class="language__btn en">En</button>
+                <button class="language__btn ru">Ru</button>
+            </div>
 
-                        <a href="https://youtube.com/@ilandroxy" target="_blank" class="content__social-item">
-                            <img src="./images/icons/youtube.svg" alt="YouTube">
-                            <span>YouTube</span>
+            <div class="header__inner">
+                <div class="logo">
+                    <img src="./images/header/avatar.png" alt="">
+                </div>
+
+                <div class="header__content">
+                    <h1 class="header__title title">
+                        Привет, я Илья Андрианов. Здесь вы найдете кто я и чем занимаюсь!
+                    </h1>
+
+                    <div class="header__icons">
+                        <ul class="icons__menu">
+                            <li class="icons__menu-item">
+                                <a href="http://t.me/ilandroxy" target="_blank" class="menu__icons-link">
+                                    <img src="./images/header/icons/telegram.svg" alt="" class="menu__icons-img">
+                                    <span class="icon__name">Telegram</span>
+                                </a>
+                            </li>
+                            <li class="icons__menu-item">
+                                <a href="http://wa.me/message/JSXJ2NLWTVNFC1" target="_blank" class="menu__icons-link">
+                                    <img src="./images/header/icons/whatsapp.svg" alt="" class="menu__icons-img">
+                                    <span class="icon__name">WhatsApp</span>
+                                </a>
+                        </li>
+                            <li class="icons__menu-item">
+                                <a href="https://github.com/ilandroxxy" target="_blank" class="menu__icons-link">
+                                    <img src="./images/header/icons/github.svg" alt="" class="menu__icons-img">
+                                    <span class="icon__name">GitHub</span>
+                                </a>
+                            </li>
+                            <li class="icons__menu-item">
+                                <a href="https://vk.com/ilandroxxy" target="_blank" class="menu__icons-link">
+                                    <img src="./images/header/icons/vk.svg" alt="" class="menu__icons-img">
+                                    <span class="icon__name">VK</span>
+                                </a>
+                            </li>
+                            <li class="icons__menu-item">
+                                <a href="https://youtube.com/@ilandroxy" target="_blank" class="menu__icons-link">
+                                    <img src="./images/header/icons/youtube.svg" alt="" class="menu__icons-img">
+                                    <span class="icon__name">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__btns">
+                        <a href="https://planerka.app/meet/ilandroxy/tutor?date=2023-01-22%2B0300" class="btn" target="_blank">
+                            <div class="btn__left">
+                                <ul class="btn__list">
+                                    <li class="btn__item">
+                                        💻 Запись на Онлайн урок
+                                    </li>
+                                    <li class="btn__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                           </svg>
+                                        60 минут
+                                    </li>
+                                </ul>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 md:h-6 shrink-0 md:text-newGray-500"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                         </a>
-                    </nav>
+    
+                        <a href="https://planerka.app/meet/ilandroxy/meeting?date=2023-01-22%2B0300" target="_blank" class="btn">
+                            <div class="btn__left">
+                                <ul class="btn__list">
+                                    <li class="btn__item">
+                                        👋 Запланировать встречу
+                                    </li>
+                                    <li class="btn__item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                                           </svg>
+                                        60 минут
+                                    </li>
+                                </ul>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 md:h-6 shrink-0 md:text-newGray-500"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                   
                 </div>
             </div>
-            <div class="content__main">
-                <div class="content__main-item">
-                    <div class="main-item__description">
-                        <p>Я работаю только с малым бизнесом или индивидуальными клиентами.</p>
-                        <p>Но не верьте моим словам. Посмотрите мои последние проекты. Они представят меня лучше, чем просто слова.</p>
-                    </div>
-                </div>
-                
-                <h2 class="content__subheader">Обо мне</h2>
-                <div class="content__main-item">
-                    <div class="main-item__description">
-                        <p>Я проделал огромный путь к своей нынешней точке. С детства я понимал, что буду разработчиком. Не просто разработчиком, а Разработчиком. Мой путь заключается в том, чтобы делать все возможное для своих клиентов. Я всегда стараюсь выяснить настоящие причины неисправностей и найти лучшее решение. Я думаю не только о коде и его качестве, но и о бизнес-логике и удовлетворенности клиентов.</p>
-                    </div>
-                </div>
-                <div class="content__main-item">
-                    <div class="main-item__description">
-                        <p>Каждый клиент, который у меня был, был счастлив работать со мной. Практически каждый второй клиент приходит ко мне по рекомендации. Я думаю, это говорит о многом.</p>
-                    </div>
-                </div>
+        </div>
+    </header>
 
-                <div class="content__images">
-                    <div class="content__img">
-                        <a data-fslightbox="cart" href="./images/>
-                            <img src="./images/I/4.jpg" alt="">
+    <main class="main">
+        <section class="about-me">
+            <div class="container">
+                <h2 class="about-me__title title">Обо мне</h2>
+                <p class="about-me__text text">
+                    Я проделал огромный путь к своей нынешней точке. С детства я понимал, что буду разработчиком. Не просто разработчиком, а Разработчиком. Мой путь заключается в том, чтобы делать все возможное для своих клиентов. Я всегда стараюсь выяснить настоящие причины неисправностей и найти лучшее решение. Я думаю не только о коде и его качестве, но и о бизнес-логике и удовлетворенности клиентов.
+                </p>
+
+                <p class="about-me__text text">
+                    Каждый клиент, который у меня был, был счастлив работать со мной. Практически каждый второй клиент приходит ко мне по рекомендации. Я думаю, это говорит о многом.
+                </p>
+
+                <div class="about-me__inner">
+                    <div class="about-me__img">
+                        <a href="./images/2.png" data-fslightbox="education" class="about-me__img-link">
+                            <img src="./images/2.png" alt="">
                         </a>
                     </div>
-
-                    <div class="content__img">
-                        <a data-fslightbox="cart" href="./images/I/5.jpg">
-                            <img src="./images/I/5.jpg" alt="">
+                    <div class="about-me__img">
+                        <a href="./images/qr.png" data-fslightbox="cart" class="about-me__img-link">
+                            <img src="./images/qr.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="content__images__text">
-                    <div class="main-item__description">
-                        <p>Воспользуйтесь моей новой умной визиткой <a href="https://card.myqrcards.com/links/5zdU4UMLyic?v=53150" target="_blank">MyQRcards</a> для связи со мной. </p>
 
-                        <p>
-                            Доступ к визитке через ссылку, QR код и NFC модуль, который можно встроить в любой носитель!
-                        </p>
+                <p class="about-me__text text">
+                    Воспользуйтесь моей новой умной визиткой <a href="https://card.myqrcards.com/links/5zdU4UMLyic?v=53150" target="_blank" class="about-me__text-link">MyQRcards</a> для связи со мной.
+                </p>
+                <p class="about-me__text text"> 
+                    Доступ к визитке через ссылку, QR код и NFC модуль, который можно встроить в любой носитель!
+                    Если захотел такую же - <a href="http://myqrcards.com/shop" target="_blank" class="about-me__text-link">заходи в наш магазин</a>. Используй промокод andrianov на 10% скидку!
+                </p>
 
-                        <p>
-                            Если захотел такую же - <a href="http://myqrcards.com/shop" target="_blank">заходи в наш магазин</a>. Используй промокод andrianov на 10% скидку!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper mySwiper">
+                <div class="about-me__slider swiper mySwiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a data-fslightbox="education" href="./images/I/1.png">
-                            <img src="./images/I/1.png" alt="">
+                      <div class="swiper-slide about-me__slider-img">
+                        <a href="./images/diplov.png" data-fslightbox="education" class="about-me__img-link">
+                            <img src="./images/diplov.png" alt="">
                         </a>
                       </div>
-                      <div class="swiper-slide">
-                        <a data-fslightbox="education" href="./images/I/2.jpg">
-                            <img src="./images/I/2.jpg" alt="">
+                      
+                      <div class="swiper-slide about-me__slider-img">
+                        <a href="./images/main/I/3.png" data-fslightbox="education" class="about-me__img-link">
+                            <img src="./images/main/I/3.png" alt="">
                         </a>
                       </div>
-                      <div class="swiper-slide">
-                        <a data-fslightbox="education" href="./images/I/3.jpg">
-                            <img src="./images/I/3.jpg" alt="">
+
+                      <div class="swiper-slide about-me__slider-img">
+                        <a href="./images/main/I/6.png" data-fslightbox="education" class="about-me__img-link">
+                            <img src="./images/main/I/6.png" alt="">
                         </a>
                       </div>
                      
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </section>
 
-                <h2 class="content__subheader">Мои проекты</h2>
+        <section class="projects">
+            <div class="container">
+                <div class="projects__card">
+                    <div class="projects__img">
+                        <a href="./images/project-1.png" data-fslightbox="project" class="projects__img-link">
+                            <img src="./images/project-1.png" alt="">
+                        </a> 
+                    </div>
 
-                <div class="content__main-item project">
-                    <a data-fslightbox="project" href="./images/project/project-3.png">
-                        <img src="./images/project/project-3.png" alt="project2">
-                    </a>
-                    <div>
-                        <div class="main-item__title">
-                            <span class="projects">Репетитор по информатике ЕГЭ и программирование на Python</span>
-                        </div>
-                        <div class="main-item__subdescription">
-                            <p class="main-item__links"><a href="https://www.avito.ru/user/590293c00d3ab79d83e929a6731df164/profile?src=sharing" target="_blank"><span>Мой профиль на Авито</span></a></p>
-                        </div>
+                    <div class="project__content">
+                        <h3 class="project__card-title title">
+                            Репетитор по информатике ЕГЭ и программирование на Python
+                        </h3>
+                        <a href="https://www.avito.ru/user/590293c00d3ab79d83e929a6731df164/profile?src=sharing" target="_blank" class="projects__card-link text">Мой профиль на Авито</a>
                     </div>
                 </div>
 
-                <div class="content__main-item project">
-                    <a data-fslightbox="project" href="./images/project/project-2.png">
-                        <img src="./images/project/project-2.png" alt="project1">
-                    </a>
-                    <div>
-                        <div class="main-item__title">
-                            <span class="projects">Блог посвященный подготовке к ЕГЭ по информатике</span>
-                        </div>
-                        <div class="main-item__subdescription">
-                            <p class="main-item__links"><a href="https://teletype.in/@ilandroxy" target="_blank"><span>Подписывайтесь на мой Teletype.</span><br></a><a href="https://t.me/itpy_easy_ege" target="_blank"><span>Или читайте в удобном формате из Telegram.</span></a> </p>
-                        </div>
+                <div class="projects__card">
+                    <div class="projects__img">
+                        <a href="./images/project-2.png" data-fslightbox="project" class="projects__img-link">
+                            <img src="./images/project-2.png" alt="">
+                        </a>
+                        
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__card-title title">
+                            Блог посвященный подготовке к ЕГЭ по информатике
+                        </h3>
+                        <a href="https://teletype.in/@ilandroxy" target="_blank" class="projects__card-link text">Подписывайтесь на мой Teletype.</a>
+                        <a href="https://t.me/itpy_easy_ege" target="_blank" class="projects__card-link text">Или читайте в удобном формате из Telegram.</a>
                     </div>
                 </div>
-                
-                <div class="content__main-item project">
-                    <a data-fslightbox="project" href="./images/project/project-1.png">
-                        <img src="./images/project/project-1.png" alt="project2">
-                    </a>
-                    <div>
-                        <div class="main-item__title">
-                            <span class="projects">Разрабатываю своего Telegram-бота для проведения уроков</span>
-                        </div>
-                        <div class="main-item__subdescription">
-                            <p class="main-item__links"><a href="http://www.t.me/ilandroxy_Bot" target="_blank"><span>Ссылка на мой Telegram-бот</span></a> </p>
-                        </div>
+
+                <div class="projects__card">
+                    <div class="projects__img">
+                        <a href="./images/project-3.png" data-fslightbox="project" class="projects__img-link">
+                            <img src="./images/project-3.png" alt="">
+                        </a>
+                        
+                    </div>
+
+                    <div class="project__content">
+                        <h3 class="project__card-title title">
+                            Разработка своего Telegram-бота для проведения уроков
+                        </h3>
+                        <a href="http://www.t.me/ilandroxy_Bot" target="_blank" class="projects__card-link text">Ссылка на мой Telegram-бот.</a>
                     </div>
                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <h3 class="footer__title title">
+                    © Илья Андрианов
+                </h3>
+
+                <ul class="footer-icons__menu">
+                    <li class="footer-icon__item">
+                        <a href="http://t.me/ilandroxy" target="_blank" class="footer-icon__link">
+                            <img src="./images/header/icons/telegram.svg" alt="" class="footer-icon__img">
+                        </a>
+                    </li>
+                    <li class="footer-icon__item">
+                        <a href="http://wa.me/message/JSXJ2NLWTVNFC1" target="_blank" class="footer-icon__link">
+                            <img src="./images/header/icons/whatsapp.svg" alt="" class="footer-icon__img">
+                        </a>
+                    </li>
+                    <li class="footer-icon__item">
+                        <a href="https://github.com/ilandroxxy" target="_blank" class="footer-icon__link">
+                            <img src="./images/header/icons/github.svg" alt="" class="footer-icon__img">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="footer">
-            <div>
-                <span class="name">© Илья Андрианов</span>
-            </div>
-            <div>
-                <nav class="footer__social">
-                    <a href="http://t.me/ilandroxy" target="_blank" class="footer__social-item">
-                        <img src="./images/icons/telegram.svg" alt="Telegram">
-                    </a>
-                    <a href="http://wa.me/message/JSXJ2NLWTVNFC1" target="_blank" class="footer__social-item">
-                        <img src="./images/icons/whatsapp.svg" alt="WhatsApp">
-                    </a>
-                    <a href="https://github.com/ilandroxxy" target="_blank" class="footer__social-item">
-                        <img src="./images/icons/github.svg" alt="GitHub">
-                    </a>
-                   
-                </nav>
-            </div>
-        </div>
-    </div>
+    </footer>
+
     <script src="./js/fslightbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
